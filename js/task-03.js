@@ -12,3 +12,10 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const gallaryMarkupRef = images
+  .map(({ url, alt }) => `<li><img src="${url}" alt="${alt}"></li>`)
+  .join("");
+
+  const gallaryListRef = document.querySelector(".gallery");
+  gallaryListRef.insertAdjacentHTML("beforeend", gallaryMarkupRef);
