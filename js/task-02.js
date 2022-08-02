@@ -13,6 +13,8 @@ const ingredientsRef = ingredients.map(ingradient => {
 
   return ingradientItemRef;
 });
+console.log(ingredientsRef);
 
 const ingredientsListRef = document.querySelector("#ingredients");
 ingredientsListRef.append(...ingredientsRef);
+console.log(ingredientsListRef);
