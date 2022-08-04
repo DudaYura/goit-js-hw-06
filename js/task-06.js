@@ -3,13 +3,13 @@ const symbolsNumberRef = Number(textInputRef.dataset.length);
 
 textInputRef.addEventListener('blur', onInputBlur);
 
-function onInputBlur(event) {
+function onInputBlur(evt) {
   
-  if (event.currentTarget.value.length === symbolsNumberRef) {
-    event.currentTarget.classList.add('valid');
-    event.currentTarget.classList.remove('invalid');
+  if (evt.currentTarget.value.length === symbolsNumberRef) {
+    evt.currentTarget.classList.add('valid');
+    evt.currentTarget.classList.remove('invalid');
   } else {
-    event.currentTarget.classList.add('invalid');
-    event.currentTarget.classList.remove('valid');
+    evt.currentTarget.classList.add('invalid');
+    evt.currentTarget.classList.remove('valid');
   }
 };

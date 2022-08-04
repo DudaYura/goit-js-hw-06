@@ -1,12 +1,12 @@
 const nameInputRef = document.querySelector('#name-input');
 const nameOutputRef = document.querySelector('#name-output');
 
-const onNameInputChange = event => {
+const onNameInputChange = evt => {
 
-    if (event.currentTarget.value === '') {
+    if (evt.currentTarget.value === '') {
         nameOutputRef.textContent = 'Anonymous';
     } else {
-        nameOutputRef.textContent = event.currentTarget.value;
+        nameOutputRef.textContent = evt.currentTarget.value;
     }
 };
 
