@@ -18,6 +18,7 @@ function onFormSubmit(evt) {
         if (element.name) formElements[element.name] = element.value;
     }
 
-
+    console.log(formElements);
+    
     evt.currentTarget.reset();
 }
